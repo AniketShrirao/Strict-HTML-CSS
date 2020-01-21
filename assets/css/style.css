@@ -100,17 +100,27 @@ li {
 /*for wrapper*/
 .wrapper {
   max-width: 1360px;
-  width: 86%; 
+  width: 69.5%; 
   margin: 0 auto;
 }
+
+/* color & fonts */
+:root {
+  --primary-color :#15a4fa;
+  --secondary-color:#2d3950;
+  --text-color:#969797;
+  --second-text-color:#75787e;
+  --primary-size: 34px;
+  --secondary-size:13px;
+}
+
 /*=================================
   Header styling starts here
 =================================*/
 
-
-
-
-
+header {
+  padding: 22px 0 21px;
+}
 
 /*=================================
   Header styling ends here
