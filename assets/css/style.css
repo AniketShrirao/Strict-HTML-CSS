@@ -175,7 +175,7 @@ header {
 }
 
 .banner-drop {
-  margin-bottom: 75px;
+  margin-bottom: 57px;
   text-indent: -9999px;
 }
 
@@ -202,10 +202,11 @@ header {
   Design styling starts here
 =================================*/ 
 
-
-
-
-
+.design { 
+  padding:67px 0 88px;
+  background: #f6f9f9;
+  text-align: center;
+}
 
 
  /*=================================
@@ -215,8 +216,6 @@ header {
 /*=================================
   Services styling starts here
 =================================*/ 
-
-
 
 
 
