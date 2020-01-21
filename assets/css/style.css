@@ -135,6 +135,9 @@ header {
   Banner styling starts here
 =================================*/ 
 
+.banner {
+  background: url('https://via.placeholder.com/1350x677') no-repeat;
+}
 
 
 
