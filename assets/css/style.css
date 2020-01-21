@@ -208,6 +208,17 @@ header {
   text-align: center;
 }
 
+.design h3 {
+  margin-bottom: 21px;
+  font-size: var(--primary-size);
+  color: var(--secondary-color);
+}
+
+.design p {
+  font-size: 17px;
+  color: var(--second-text-color);
+  line-height: 1.5;
+}
 
  /*=================================
   Design styling ends here
