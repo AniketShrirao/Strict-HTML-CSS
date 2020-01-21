@@ -229,10 +229,77 @@ header {
 =================================*/ 
 
 .services {
-  padding: 54px 0 0;
+  padding: 54px 0 50px;
+  background: #fff;
 }
 
+.services ul { 
+  display: flex;
+  flex-wrap: wrap;
+}
 
+.service { 
+  display: flex;
+  flex-direction: column;
+  flex-basis: 33%;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.service a {
+  margin-bottom: 25px;
+  position: relative;
+  text-indent: -9999px;
+}
+
+.service a:hover::after {
+  transition: -3s ease;
+  transform: scale(1.05);
+}
+
+.service a::after {
+  background: linear-gradient(to right, #48baff 50%, #5fc3ff 50%);
+  color: #fff;
+  font-family: fontAwesome;
+  font-size: 60px;
+  float: left;
+  text-indent: 0;
+  z-index: 1;
+}
+
+.service:first-of-type a::after { 
+  padding: 11.5px 27px;
+  content: '\f10b';
+}
+
+.service:nth-of-type(2) a::after { 
+  padding: 22.5px 21px;
+  content: '\f1d8';
+  font-size: 38px;
+}
+
+.service:nth-of-type(3) a::after { 
+  padding: 24px 22.5px;
+  content: '\f0a1';
+  font-size: 35px;
+}
+
+.service h4 {
+  margin-bottom: 16px;
+  color: var(--secondary-color);
+  font-size: 18px;
+  text-transform: capitalize;
+}
+
+.service p {
+  width: 90%;
+  color:  var(--text-color);
+  font-size: 13.5px;
+  line-height: 1.4;
+}
+
+.service:first-of-type p { width:80%;}
 
  /*=================================
  Services styling ends here
