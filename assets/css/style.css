@@ -136,13 +136,63 @@ header {
 =================================*/ 
 
 .banner {
-  background: url('https://via.placeholder.com/1350x677') no-repeat;
+  background: url('https://via.placeholder.com/1350x677/?text=STRICT') no-repeat;
+  background-position: center;
+  background-size: cover;
+  text-align: center;
 }
 
+.banner h2 {
+  width: 53%;
+  padding: 163px 0 0;
+  margin: 0 auto 32px;
+  border-bottom: 1.5px solid var(--primary-color);
+  color: #fff;
+  font-size: 105px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
 
+.banner p { 
+  margin-bottom: 52px;
+  color: #fff;
+  font-size: 16px;
+  font-weight: 600;
+}
 
+.action {
+  padding: 13.5px 27.5px;
+  margin-bottom: 150px;
+  color: #fff;
+  border: 1px solid var(--primary-color);
+}
 
+.action:hover {
+  border: 1px solid #fff;
+  background: #fff;
+  color: var(--primary-color);
+  transition: .5s ease;
+}
 
+.banner-drop {
+  margin-bottom: 75px;
+  text-indent: -9999px;
+}
+
+.banner-drop::before {
+  padding: 10px 15px;
+  content: '\f107';
+  color: #fff;
+  font-family: fontAwesome;
+  float: left;
+  font-size: 30px;
+  text-indent: 0;
+}
+
+.banner-drop:hover::before {
+  background: rgba(0,0,0,0.4);
+  transition: .5s ease;
+}
 
  /*=================================
   Banner styling ends here
