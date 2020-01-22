@@ -478,7 +478,35 @@ footer p {
   font-weight: 600;
 }
 
+.social-icons {
+  margin: 21px 0;
+  float: right;
+}
 
+.social-icons a { text-indent: -9999px;}
+
+.facebook::before ,
+.twitter::before,
+.googleplus::before,
+.linkedin::before {
+  padding: 9px;
+  background: var(--primary-color);
+  color: #fff;
+  font-family: fontAwesome;
+  float: left;
+  text-indent: 0;
+}
+
+.facebook::before { 
+  content: '\f09a';
+  padding: 9px 12px;
+}
+
+.twitter::before { content: '\f099';}
+
+.googleplus::before{ content: '\f0d5';}
+
+.linkedin::before { content: '\f0e1';}
 
  /*=================================
   footer styling ends here
