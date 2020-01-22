@@ -512,3 +512,56 @@ footer p {
   footer styling ends here
 =================================*/ 
 
+/*media query starts*/
+
+@media only screen and (min-width: 1024px) {
+  
+  .action:hover {
+    border: 1px solid #fff;
+    background: #fff;
+    color: var(--primary-color);
+    transition: .5s ease;
+  }
+  
+  .banner-drop:hover::before {
+    background: rgba(0,0,0,0.4);
+    transition: .5s ease;
+  }
+    
+  .service a:hover::after {
+    transition: -3s ease;
+    transform: scale(1.05);
+  }
+    
+  .magnify:hover::before,
+  .work-link:hover::before {
+    background: #fff;
+    color: var(--primary-color);
+  }
+  
+  .work li:hover img{
+    opacity: 0.2;
+    transition: .5s ease;
+  }
+  
+  .work li:hover .showcase-links {
+    opacity: 1;
+    transition: .5s ease;
+  }  
+  
+  
+  .form-control a:hover {
+    border: 1px solid #fff;
+    background: #fff;
+    color: var(--primary-color);
+    transition: .5s ease;
+  }
+  
+  .social-icons .facebook:hover::before,
+  .twitter:hover::before,
+  .googleplus:hover::before,
+  .linkedin:hover::before { 
+    color: var(--secondary-color);
+    transition: .5s ease;
+  }
+}
