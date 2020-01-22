@@ -167,13 +167,6 @@ header {
   border: 1px solid var(--primary-color);
 }
 
-.action:hover {
-  border: 1px solid #fff;
-  background: #fff;
-  color: var(--primary-color);
-  transition: .5s ease;
-}
-
 .banner-drop {
   margin-bottom: 57px;
   text-indent: -9999px;
@@ -187,11 +180,6 @@ header {
   float: left;
   font-size: 30px;
   text-indent: 0;
-}
-
-.banner-drop:hover::before {
-  background: rgba(0,0,0,0.4);
-  transition: .5s ease;
 }
 
  /*=================================
@@ -251,11 +239,6 @@ header {
   margin-bottom: 25px;
   position: relative;
   text-indent: -9999px;
-}
-
-.service a:hover::after {
-  transition: -3s ease;
-  transform: scale(1.05);
 }
 
 .service a::after {
@@ -331,23 +314,26 @@ header {
 .work {
   display: flex;
   flex-wrap:wrap;
+  justify-content: space-between;
 }
 
 .work li {
-  margin: 12.5px;
-  width: 30%;
+  margin: 1px -1.6%;
+  margin-bottom: 24px;
+  width: 32.29%;
   position: relative;
   background: rgba(0,0,255,0.5);
 }
 
 .showcase-links {
-  position: absolute;
-  display: flex;
-  top:45%;
-  left:38%;
-  justify-content: center;
-  align-items: center;
+  transition: .5s ease;
   opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
 }
 
 .showcase-links a { text-indent: -9999px;}
@@ -373,11 +359,15 @@ header {
   float: left;
   text-indent: 0;
 }
-.work li:hover img{
-  opacity: 0.2;
-}
 
-.work li:hover .showcase-links {opacity: 1;}
+.work li img {
+  opacity: 1;
+  display: block;
+  width: 100%;
+  height: auto;
+  transition: .5s ease;
+  backface-visibility: hidden;
+}
 
  /*=================================
   Showcase styling ends here
@@ -390,7 +380,9 @@ header {
 .contact {
   padding: 60px 0 89px;
   text-align: center;
-  background: url('https://via.placeholder.com/1351x591');
+  background: url('https://via.placeholder.com/1351x591') no-repeat;
+  background-position: center;
+  background-size: cover;
 }
 
 .contact h3 {
@@ -443,20 +435,13 @@ form {
 
 .form-control a {
   padding: 9.5px 42px;
-  border: 1px solid;
+  border: 1px solid var(--primary-color);
   border-radius: 4px;
   color: #fff;
   font-size: 16px;
   font-weight: 600;
   text-align: center;
   text-transform: capitalize;
-}
-
-.form-control a:hover {
-  border: 1px solid #fff;
-  background: #fff;
-  color: var(--primary-color);
-  transition: .5s ease;
 }
 
 .checkbox {
@@ -481,9 +466,17 @@ form {
   footer styling starts here
 =================================*/ 
 
+footer {
+  background: #fff;
+}
 
-
-
+footer p {
+  margin: 30px 0;
+  color: var(--text-color);
+  float: left;
+  font-size: 13px;
+  font-weight: 600;
+}
 
 
 
@@ -491,10 +484,3 @@ form {
   footer styling ends here
 =================================*/ 
 
-/*media query starts*/
-/*media query for 995px starts here*/
-@media only screen and (max-width: 995px) {
-
-
-
-}  
