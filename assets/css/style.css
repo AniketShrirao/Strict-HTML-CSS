@@ -388,7 +388,7 @@ header {
 =================================*/ 
 
 .contact {
-  padding: 60px 0 90px;
+  padding: 60px 0 89px;
   text-align: center;
   background: url('https://via.placeholder.com/1351x591');
 }
@@ -405,6 +405,69 @@ header {
   color: var(--text-color);
   font-size: var(--secondary-size);
 }
+
+form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.form-group { 
+  width: 49.7%;
+  margin: 8px 0;
+}
+
+.form-group input {
+   width: 96%;
+   padding: 16.5px 0 16.5px 16px;
+}
+
+.form-group textarea {
+  width: 96.5%;
+  padding: 18px 0 0 16px;
+  max-height: 116px;
+  resize: none;
+}
+
+.form-control {
+  width: 50%;
+  margin: 4px auto;
+  display: flex;
+  justify-self: center;
+  align-self: center;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.form-control a {
+  padding: 9.5px 42px;
+  border: 1px solid;
+  border-radius: 4px;
+  color: #fff;
+  font-size: 16px;
+  font-weight: 600;
+  text-align: center;
+  text-transform: capitalize;
+}
+
+.form-control a:hover {
+  border: 1px solid #fff;
+  background: #fff;
+  color: var(--primary-color);
+  transition: .5s ease;
+}
+
+.checkbox {
+  color: #fff;
+  font-size: 14px;
+  font-weight: 600;
+  text-transform: capitalize;
+  word-spacing: 0.2px;
+}
+
+.checkbox input { transform: scale(1.2);}
 
  /*=================================
   Contact styling ends here
