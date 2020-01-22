@@ -387,11 +387,24 @@ header {
   Contact styling starts here
 =================================*/ 
 
+.contact {
+  padding: 60px 0 90px;
+  text-align: center;
+  background: url('https://via.placeholder.com/1351x591');
+}
 
+.contact h3 {
+  margin-bottom: 16px;
+  font-size: var(--primary-size);
+  color: #fff;
+}
 
-
-
-
+.contact span {
+  display: inline-block;
+  margin-bottom: 34px;
+  color: var(--text-color);
+  font-size: var(--secondary-size);
+}
 
  /*=================================
   Contact styling ends here
