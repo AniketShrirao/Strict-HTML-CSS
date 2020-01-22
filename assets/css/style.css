@@ -328,6 +328,56 @@ header {
   font-size: var(--secondary-size);
 }
 
+.work {
+  display: flex;
+  flex-wrap:wrap;
+}
+
+.work li {
+  margin: 12.5px;
+  width: 30%;
+  position: relative;
+  background: rgba(0,0,255,0.5);
+}
+
+.showcase-links {
+  position: absolute;
+  display: flex;
+  top:45%;
+  left:38%;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+}
+
+.showcase-links a { text-indent: -9999px;}
+
+.magnify::before {
+  padding: 9px;
+  margin: 0 4px;
+  color: #fff;
+  border: 1px solid #fff;
+  content:'\f00e';
+  font-family: fontAwesome;
+  float: left;
+  text-indent: 0;
+}
+
+.work-link::before {
+  padding: 9px;
+  margin: 0 4px;
+  color: #fff;
+  border: 1px solid #fff;
+  content:'\f0c1';
+  font-family: fontAwesome;
+  float: left;
+  text-indent: 0;
+}
+.work li:hover img{
+  opacity: 0.2;
+}
+
+.work li:hover .showcase-links {opacity: 1;}
 
  /*=================================
   Showcase styling ends here
