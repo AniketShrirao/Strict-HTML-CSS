@@ -122,7 +122,6 @@ header {
   padding: 22px 0 21px;
   background: #f6f9f9;
 }
-
 /*=================================
   Header styling ends here
 =================================*/  
@@ -143,14 +142,24 @@ header {
 }
 
 .banner h2 {
-  width: 53%;
   padding: 163px 0 0;
-  margin: 0 auto 32px;
-  border-bottom: 1.5px solid var(--primary-color);
+  margin-bottom: 32px;
   color: #fff;
   font-size: 105px;
   font-weight: 700;
+  position: relative;
   text-transform: uppercase;
+}
+
+.banner-txt h2::after {
+  width: 53%;
+  height: 2px;
+  margin: 0 auto;
+  background: var(--primary-color);
+  content: '';
+  left: 25%;
+  position: absolute;
+  display: block;
 }
 
 .banner p { 
@@ -181,7 +190,6 @@ header {
   font-size: 30px;
   text-indent: 0;
 }
-
  /*=================================
   Banner styling ends here
 =================================*/ 
@@ -207,7 +215,6 @@ header {
   color: var(--second-text-color);
   line-height: 1.5;
 }
-
  /*=================================
   Design styling ends here
 =================================*/ 
@@ -222,16 +229,22 @@ header {
 }
 
 .services ul { 
+  display: -webkit-box; 
   display: flex;
   flex-wrap: wrap;
 }
 
 .service { 
+  display: -webkit-box; 
   display: flex;
-  flex-direction: column;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+          flex-direction: column;
   flex-basis: 33%;
-  justify-content: center;
-  align-items: center;
+  -webkit-box-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+          align-items: center;
   text-align: center;
 }
 
@@ -242,6 +255,7 @@ header {
 }
 
 .service a::after {
+  background: -webkit-gradient(linear, left top, right top, color-stop(50%, #48baff), color-stop(50%, #5fc3ff));
   background: linear-gradient(to right, #48baff 50%, #5fc3ff 50%);
   color: #fff;
   font-family: fontAwesome;
@@ -283,7 +297,6 @@ header {
 }
 
 .service:first-of-type p { width:80%;}
-
  /*=================================
  Services styling ends here
 =================================*/ 
@@ -312,9 +325,11 @@ header {
 }
 
 .work {
+  display: -webkit-box;
   display: flex;
   flex-wrap:wrap;
-  justify-content: space-between;
+  -webkit-box-pack: justify;
+          justify-content: space-between;
 }
 
 .work li {
@@ -326,12 +341,14 @@ header {
 }
 
 .showcase-links {
+  -webkit-transition: .5s ease;
   transition: .5s ease;
   opacity: 0;
   position: absolute;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
   -ms-transform: translate(-50%, -50%);
   text-align: center;
 }
@@ -365,10 +382,11 @@ header {
   display: block;
   width: 100%;
   height: auto;
+  -webkit-transition: .5s ease;
   transition: .5s ease;
-  backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
 }
-
  /*=================================
   Showcase styling ends here
 =================================*/ 
@@ -399,10 +417,15 @@ header {
 }
 
 form {
+  display: -webkit-box;
   display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+          flex-direction: column;
+  -webkit-box-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+          align-items: center;
   flex-wrap: wrap;
 }
 
@@ -426,11 +449,14 @@ form {
 .form-control {
   width: 50%;
   margin: 4px auto;
+  display: -webkit-box;
   display: flex;
   justify-self: center;
   align-self: center;
-  justify-content: space-between;
-  align-items: center;
+  -webkit-box-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+          align-items: center;
 }
 
 .form-control a {
@@ -452,8 +478,7 @@ form {
   word-spacing: 0.2px;
 }
 
-.checkbox input { transform: scale(1.2);}
-
+.checkbox input { -webkit-transform: scale(1.2); transform: scale(1.2);}
  /*=================================
   Contact styling ends here
 =================================*/ 
@@ -466,9 +491,7 @@ form {
   footer styling starts here
 =================================*/ 
 
-footer {
-  background: #fff;
-}
+footer { background: #fff;}
 
 footer p {
   margin: 30px 0;
@@ -507,7 +530,6 @@ footer p {
 .googleplus::before{ content: '\f0d5';}
 
 .linkedin::before { content: '\f0e1';}
-
  /*=================================
   footer styling ends here
 =================================*/ 
@@ -520,17 +542,20 @@ footer p {
     border: 1px solid #fff;
     background: #fff;
     color: var(--primary-color);
+    -webkit-transition: .5s ease;
     transition: .5s ease;
   }
   
   .banner-drop:hover::before {
     background: rgba(0,0,0,0.4);
+    -webkit-transition: .5s ease;
     transition: .5s ease;
   }
     
   .service a:hover::after {
     transition: -3s ease;
-    transform: scale(1.05);
+    -webkit-transform: scale(1.05);
+            transform: scale(1.05);
   }
     
   .magnify:hover::before,
@@ -541,19 +566,21 @@ footer p {
   
   .work li:hover img{
     opacity: 0.2;
+    -webkit-transition: .5s ease;
     transition: .5s ease;
   }
   
   .work li:hover .showcase-links {
     opacity: 1;
+    -webkit-transition: .5s ease;
     transition: .5s ease;
   }  
-  
   
   .form-control a:hover {
     border: 1px solid #fff;
     background: #fff;
     color: var(--primary-color);
+    -webkit-transition: .5s ease;
     transition: .5s ease;
   }
   
@@ -562,6 +589,76 @@ footer p {
   .googleplus:hover::before,
   .linkedin:hover::before { 
     color: var(--secondary-color);
+    -webkit-transition: .5s ease;
     transition: .5s ease;
   }
 }
+
+/*media query for 995px starts here*/
+
+@media only screen and (max-width: 995px) {
+
+  .banner-txt h2 {
+    font-size: 5rem;
+  }
+
+  .service { 
+    flex-basis: 50%; 
+    margin-bottom: 50px;
+  }
+
+  .service:last-of-type { margin: 0 auto;}
+
+  .service p:first-of-type { width: 40%;}
+
+  .service p { width: 40%;}
+
+  .work li { width: 50%;}
+
+  .form-group { width: 100%;}
+
+  .form-control { width: 100%;}
+
+}  
+
+/*media query for 767px starts here*/
+
+@media only screen and (max-width: 767px) {
+
+.banner-txt { margin: 0 auto;}
+
+.services ul { 
+  display: -webkit-box; 
+  display: flex;
+  flex-wrap: wrap;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+          flex-direction: column;
+}
+
+.service:first-of-type,
+.service:nth-of-type(2),
+.service:nth-of-type(3) { flex-basis: 100%;}
+
+.work li { width: 100%;}
+
+.form-control { -webkit-box-orient: vertical; -webkit-box-direction: normal; flex-direction: column;}
+
+.checkbox { margin-bottom: 20px;}
+}
+
+/*media query for 540px starts here*/
+
+@media only screen and (max-width: 540px) {
+  
+  .service { flex-basis: 100%;}
+
+  .work li { width: 100%;}
+
+  footer p, 
+  footer .social-icons {
+    width: 100%; 
+    margin: 0 auto;
+    display: block;
+  }
+} 
